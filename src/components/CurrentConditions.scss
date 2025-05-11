@@ -1,0 +1,156 @@
+@import '../styles/variables';
+@import '../styles/mixins';
+
+.CurrentConditions {
+  background-color: $background-color;
+  border-radius: 12.96px;
+  padding: 1.62rem;
+  margin-bottom: 1.62rem;
+
+  h2 {
+    color: $primary-color;
+    font-size: 1.215rem;
+    margin-bottom: 1.215rem;
+    font-weight: 500;
+  }
+
+  .conditions-grid {
+    @include conditions-grid;
+  }
+
+  .condition-card {
+    @include card-base;
+
+    &.temperature-card {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .card-column {
+      @include flex-column;
+
+      &:first-child {
+        flex: 1;
+      }
+
+      &:last-child {
+        margin-left: 2rem;
+        justify-content: center;
+      }
+    }
+
+    .now-label {
+      font-size: 1.125rem;
+      color: $text-color-dark;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .temp-container {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .main-temp {
+      font-size: 4.05rem;
+      line-height: 1;
+      font-weight: 400;
+      color: $primary-color;
+    }
+
+    .current-weather-icon {
+      width: 36px;
+      height: 36px;
+      margin-top: 0.81rem;
+    }
+
+    .weather-description {
+      font-size: 1.013rem;
+      color: $primary-color;
+      font-weight: bold;
+      margin-bottom: 0.405rem;
+    }
+
+    .feels-like {
+      font-size: 0.76rem;
+      color: $secondary-color;
+      margin-bottom: 0.405rem;
+    }
+
+    .high-low {
+      color: $secondary-color;
+      font-size: 0.76rem;
+    }
+
+    .card-title {
+      color: $primary-color;
+      font-size: 0.81rem;
+      margin-bottom: 0.81rem;
+      font-weight: normal;
+    }
+
+    .card-value {
+      color: $primary-color;
+      font-size: 2rem;
+      margin-bottom: 0.405rem;
+      display: flex;
+      align-items: baseline;
+      gap: 0.203rem;
+
+      .value {
+        font-weight: 500;
+      }
+
+      .unit {
+        font-size: 1.5rem;
+      }
+    }
+
+    .card-details {
+      color: $secondary-color;
+      font-size: 0.9375rem;
+      font-weight: normal;
+
+      span {
+        display: inline-block;
+      }
+
+      .wind-direction {
+        text-transform: capitalize;
+      }
+    }
+  }
+
+  &.loading {
+    @include loading-base;
+  }
+
+  &.loaded {
+    opacity: 1;
+  }
+
+  .loading-icon {
+    @include loading-icon;
+  }
+
+  .spinner {
+    @include spinner;
+  }
+
+  .loading-text {
+    color: $secondary-color;
+    font-size: 0.81rem;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

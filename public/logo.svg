@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="192" height="192" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="96" cy="96" r="96" fill="#4285F4"/>
+  
+  <!-- Sun -->
+  <circle cx="96" cy="96" r="40" fill="#FFC107"/>
+  
+  <!-- Sun Rays -->
+  <path d="M96 20V36M96 156V172M20 96H36M156 96H172M40.5 40.5L52 52M140 140L151.5 151.5M40.5 151.5L52 140M140 52L151.5 40.5" stroke="#FFC107" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Cloud -->
+  <path d="M60 120C50 120 40 110 40 100C40 90 50 80 60 80C60 60 80 50 100 50C120 50 140 60 140 80C150 80 160 90 160 100C160 110 150 120 140 120H60Z" fill="white"/>
+</svg> 

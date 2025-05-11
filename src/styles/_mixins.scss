@@ -1,0 +1,82 @@
+@import './variables';
+
+@mixin card-base {
+  background-color: $card-background;
+  border-radius: 20px;
+  padding: 1.215rem;
+}
+
+@mixin loading-base {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+@mixin loading-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.62rem;
+  z-index: 100;
+}
+
+@mixin spinner {
+  width: 32.4px;
+  height: 32.4px;
+  border: 3.24px solid #f3f3f3;
+  border-top: 3.24px solid $accent-color;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@mixin forecast-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(97.2px, 1fr));
+  gap: 0.81rem;
+
+  @media (max-width: 1200px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+@mixin conditions-grid {
+  display: grid;
+  grid-template-columns: minmax(243px, 1fr) repeat(3, minmax(121.5px, 0.5fr));
+  gap: 0.81rem;
+
+  @media (max-width: 1200px) {
+    grid-template-columns: minmax(243px, 1fr) repeat(2, minmax(121.5px, 0.5fr));
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
