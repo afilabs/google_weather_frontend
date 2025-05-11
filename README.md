@@ -15,4 +15,6 @@ How to run the app:
 3. Update the `.env` file with the URI for the companion backend app (google_weather_backend)
 4. Run `npm start`
 
+This project is designed to run with [google_weather_backend](https://github.com/afilabs/google_weather_backend).
+
 Please contact afian@afi.io if you have any questions or suggestions. Pull requests are welcome.
