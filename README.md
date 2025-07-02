@@ -5,8 +5,8 @@
 Taken from: 
 - [Meet the Google Weather API: Real time weather for maps (part 1 of 4)](https://blog.afi.io/blog/meet-the-google-weather-api-real-time-weather-for-maps/)
 - [Build a weather app with the Google Weather API (part 2 of 4)](https://blog.afi.io/blog/build-a-weather-app-with-the-google-weather-api/)
-- Google Maps weather along route: Weather aware route planner(part 3 of 4)
-- Using the Google Weather API to generate AI weather summaries
+- [Google Maps weather along route: Weather aware route planner (part 3 of 4)](https://blog.afi.io/blog/google-maps-weather-along-route-weather-aware-planner/)
+- [Google Maps Weather: add a weather layer to Gogle Maps (part 4 of 4)](https://blog.afi.io/blog/google-maps-weather-add-a-weather-layer-to-google-maps/)
 
 How to run the app:
 
